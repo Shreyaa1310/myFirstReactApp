@@ -6,11 +6,17 @@ import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./NavBar.css";
+import { useNavigate } from "react-router-dom";
+
 function NavBarComp() {
+  const navigate = useNavigate();
+  const redirectToSignUp = () => {
+    navigate("/SignUp");
+  };
+
   return (
     <Navbar expand="lg" className="bg-color">
       <Container fluid>
-        {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,7 +24,7 @@ function NavBarComp() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link>LOGO</Nav.Link>
+            <Nav.Link className="link">NavBar</Nav.Link>
             <Nav.Link className="link" href="/">
               Home
             </Nav.Link>
@@ -28,10 +34,15 @@ function NavBarComp() {
             <Nav.Link className="link" href="/food">
               Food
             </Nav.Link>
-            <Nav.Link className="link" href="/technology">
-              Technology
+            <Nav.Link className="link" href="/festival">
+              Festivals
             </Nav.Link>
-
+            <Nav.Link className="link" href="/contactus">
+              Contact Us
+            </Nav.Link>
+            <Nav.Link className="link" href="/aboutus">
+              About Us
+            </Nav.Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -47,10 +58,13 @@ function NavBarComp() {
             </Nav.Link> */}
           </Nav>
           <div style={{ float: "right" }}>
-            <Button style={{ borderRadius: "50px" }} variant="light">
+            <Button
+              style={{ borderRadius: "50px" }}
+              variant="light"
+              onClick={redirectToSignUp}
+            >
               Login / Sign up
-            </Button>
-            {" "}
+            </Button>{" "}
           </div>
         </Navbar.Collapse>
       </Container>

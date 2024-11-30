@@ -1,6 +1,22 @@
 .heading {
-  margin: 25px 0px 0px 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
+
 .outer-container {
-  padding: 10px 50px 30px 68px !important;
+  background-color: #f8f9fa; 
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.text-primary {
+  color: #007bff; 
+}
+
+.img-fluid {
+  border: 2px solid #dee2e6; 
 }

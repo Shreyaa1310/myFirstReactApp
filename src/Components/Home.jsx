@@ -7,7 +7,14 @@ import Img1 from "../Images/nature.jpg";
 import Button from "react-bootstrap/esm/Button";
 import Card1 from "./Cards";
 import Footer from "./Footer";
+import paris from "../Images/paris.jpg";
+import nice from "../Images/nice.jpg";
+import Provence from "../Images/Provence.jpg";
 import "./Home.css";
+import croissant from "../Images/Croissant.jpg";
+import macarons from "../Images/Macarons.jpg";
+import frenchBaguette from "../Images/FrenchBaguette.jpg";
+import { useNavigate } from "react-router-dom";
 function Home() {
   // // State to manage form inputs
   // const [firstName, setFirstName] = useState("");
@@ -29,6 +36,15 @@ function Home() {
   //   setLastName("");
   //   setContactNumber("");
   // };
+
+
+   const navigate = useNavigate();
+   const redirectToFood = () => {
+     navigate("/Food");
+   };
+   const redirectToTravel = () => {
+     navigate("/Tourism");
+   };
 
   return (
     // <img src={Img1} height={200} width={200} alt="" />
@@ -59,79 +75,55 @@ function Home() {
             margin: "3%",
           }}
         >
-          <Card style={{ width: "14rem" }}>
-            <Card.Img variant="top" src={Img1} />
+          <Card style={{ width: "20rem" }}>
+            <Card.Img variant="top" src={paris} />
             <Card.Body>
               <Card.Title>Paris</Card.Title>
-              <Card.Text>Iil-de-france , France </Card.Text>
+              {/* <Card.Text>France </Card.Text> */}
               <Card.Text className="paraText">
-                It is the most populous of the eighteen regions of France, with
-                an official estimated population of 12,271,794 residents on 1
-                January 2023.Centred on the capital Paris, it is located in the
-                north-central part of the country and often called the Paris
-                Region
+                The capital city of France, known for its iconic landmarks like
+                the Eiffel Tower, Notre Dame Cathedral, and the Louvre Museum.
               </Card.Text>
               <Button
                 style={{ background: "#333", borderColor: "#333" }}
                 variant="primary"
+                onClick={redirectToTravel}
               >
                 Details
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "14rem" }}>
-            <Card.Img variant="top" src={Img1} />
-            <Card.Body>
-              <Card.Title>Paris</Card.Title>
-              <Card.Text>Iil-de-france , France </Card.Text>
-              <Card.Text className="paraText">
-                It is the most populous of the eighteen regions of France, with
-                an official estimated population of 12,271,794 residents on 1
-                January 2023.Centred on the capital Paris, it is located in the
-                north-central part of the country and often called the Paris
-                Region
-              </Card.Text>
-              <Button
-                style={{ background: "#333", borderColor: "#333" }}
-                variant="primary"
-              >
-                Details
-              </Button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "14rem" }}>
-            <Card.Img variant="top" src={Img1} />
+          <Card style={{ width: "20rem" }}>
+            <Card.Img variant="top" src={nice} />
             <Card.Body>
               <Card.Title>Nice</Card.Title>
-              <Card.Text>Provence-Alpes-Cote d'Azur, France</Card.Text>
+              {/* <Card.Text>Iil-de-france , France </Card.Text> */}
               <Card.Text className="paraText">
-                Provence-Alps-Azure Coast'; or 'Provence, Alps, French Riviera',
-                commonly shortened to PACA, also known as Région Sud 'Southern
-                Region', is one of the eighteen administrative regions of
-                France, located at the far southeastern point of the mainland.
+                Located on the French Riviera, Nice offers beautiful beaches, a
+                charming old town, and the famous Promenade des Anglais.
               </Card.Text>
               <Button
                 style={{ background: "#333", borderColor: "#333" }}
                 variant="primary"
+                onClick={redirectToTravel}
               >
                 Details
               </Button>
             </Card.Body>
           </Card>
-          <Card style={{ width: "14rem" }}>
-            <Card.Img variant="top" src={Img1} />
+          <Card style={{ width: "20rem" }}>
+            <Card.Img variant="top" src={Provence} />
             <Card.Body>
-              <Card.Title>Bordeaux</Card.Title>
-              <Card.Text>Nouvelle-Aquitaine, France</Card.Text>
+              <Card.Title>Provence</Card.Title>
+              {/* <Card.Text>Provence-Alpes-Cote d'Azur, France</Card.Text> */}
               <Card.Text className="paraText">
-                It is the largest administrative region in France by area,
-                spanning the west and southwest of Metropolitan France. The
-                region was created in 2014 by the merging of Aquitaine,
-                Limousin, and Poitou-Charentes in a territorial reform.
+                A region in southeastern France known for its stunning lavender
+                fields, rolling vineyards, and picturesque villages.
               </Card.Text>
               <Button
                 style={{ background: "#333", borderColor: "#333" }}
                 variant="primary"
+                onClick={redirectToTravel}
               >
                 Details
               </Button>
@@ -153,59 +145,55 @@ function Home() {
           }}
         >
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={Img1} />
+            <Card.Img variant="top" src={croissant} />
             <Card.Body>
-              <Card.Title>Boeuf Bourguignon</Card.Title>
+              <Card.Title>Croissant</Card.Title>
               {/* <Card.Text>Iil-de-france , France </Card.Text> */}
               <Card.Text>
-                Named boeuf Bourguignon after the famed red wine from the
-                Burgundy region of France, this dish combines a nice, fatty cut
-                of beef with a dry pinot noir and plenty of fresh vegetables to
-                create a hearty and indulgent stew.{" "}
+                A croissant is a laminated, yeast-leavened bakery product that
+                contains dough/roll-in fat layers{" "}
               </Card.Text>
               <Button
                 style={{ background: "#333", borderColor: "#333" }}
                 variant="primary"
+                onClick={redirectToFood}
               >
                 Details
               </Button>
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={Img1} />
+            <Card.Img variant="top" src={macarons} />
             <Card.Body>
-              <Card.Title>Bouillabaisse</Card.Title>
+              <Card.Title>Macarons</Card.Title>
               {/* <Card.Text>Provence-Alpes-Cote d'Azur, France</Card.Text> */}
               <Card.Text>
-                With a long name and an even longer list of ingredients,
-                bouillabaisse is Marseille’s gift to France’s culinary canon.
-                The soup, once a poor man’s dish and now a mainstay on many a
-                Michelin-starred menu, elevates the catch of the day beyond your
-                standard soupe de poisson.
+                Macarons are sweet meringue-based confections made with egg
+                whites, sugar, and almond flour, filled with ganache,
+                buttercream, or jam.
               </Card.Text>
               <Button
                 style={{ background: "#333", borderColor: "#333" }}
                 variant="primary"
+                onClick={redirectToFood}
               >
                 Details
               </Button>
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={Img1} />
+            <Card.Img variant="top" src={frenchBaguette} />
             <Card.Body>
-              <Card.Title>Tarte Tatin</Card.Title>
+              <Card.Title>French Baguette</Card.Title>
               {/* <Card.Text>Nouvelle-Aquitaine, France</Card.Text> */}
               <Card.Text>
-                This list of classic French dishes would be incomplete without
-                the inclusion of something from the country’s extensive
-                repertoire of patisserie. Though not as refined or architectural
-                as some treats seen in the windows of French sweet shops, the
-                buttery, simmering tarte Tatin
+                An iconic French bread, crispy on the outside and soft on the
+                inside, perfect for pairing with cheese or jam.
               </Card.Text>
               <Button
                 style={{ background: "#333", borderColor: "#333" }}
                 variant="primary"
+                onClick={redirectToFood}
               >
                 Details
               </Button>

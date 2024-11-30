@@ -2,30 +2,61 @@ import React from "react";
 import Img1 from "../Images/nature.jpg";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
+import croissant from "../Images/Croissant.jpg";
+import ratatouille from "../Images/Ratatouille.jpg";
+import paris from "../Images/paris.jpg";
+import nice from "../Images/nice.jpg";
+import parisImg from "../Images/paris2.jpg";
+
 const Cards = () => {
   return (
     <div>
       <Carousel>
         <Carousel.Item>
-          <img src={Img1} height={550} width={1400} />
+          <img src={parisImg} height={550} width={1550} />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={Img1} height={550} width={1400} />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={Img1} height={550} width={1400} />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Eiffel Tower</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              It rests on a base that is 5 meters (17 feet) tall, and the TV
+              antenna atop the tower gives it a total elevation of 330 meters
+              (1,083 feet).
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={croissant} height={550} width={1550} />
+          <Carousel.Caption>
+            <h3>Croissant</h3>
+            <p>Croissants belong to the Viennoiserie or pastry category</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={ratatouille} height={550} width={1550} />
+          <Carousel.Caption>
+            <h3>Ratatouille</h3>
+            <p>
+              A traditional French vegetable stew made with zucchini, eggplant,
+              bell peppers, and tomatoes
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={paris} height={550} width={1550} />
+          <Carousel.Caption>
+            <h3>Paris</h3>
+            <p>
+              The capital city of France, known for its iconic landmarks like
+              the Eiffel Tower.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={nice} height={550} width={1550} />
+          <Carousel.Caption>
+            <h3>Nice</h3>
+            <p>
+              Located on the French Riviera, Nice offers beautiful beaches, a
+              charming old town, and the famous Promenade
             </p>
           </Carousel.Caption>
         </Carousel.Item>
