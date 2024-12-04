@@ -13,7 +13,12 @@ const Cards = () => {
     <div>
       <Carousel>
         <Carousel.Item>
-          <img src={parisImg} height={550} width={1550} />
+          <img
+            src={parisImg}
+            className="d-block w-100"
+            alt="Eiffel Tower"
+            style={{ height: "550px", objectFit: "cover" }}
+          />
           <Carousel.Caption>
             <h3>Eiffel Tower</h3>
             <p>
@@ -24,14 +29,24 @@ const Cards = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={croissant} height={550} width={1550} />
+          <img
+            src={croissant}
+            className="d-block w-100"
+            alt="Croissant"
+            style={{ height: "550px", objectFit: "cover" }}
+          />
           <Carousel.Caption>
             <h3>Croissant</h3>
             <p>Croissants belong to the Viennoiserie or pastry category</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={ratatouille} height={550} width={1550} />
+          <img
+            src={ratatouille}
+            className="d-block w-100"
+            alt="Ratatouille"
+            style={{ height: "550px", objectFit: "cover" }}
+          />
           <Carousel.Caption>
             <h3>Ratatouille</h3>
             <p>
@@ -41,7 +56,12 @@ const Cards = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={paris} height={550} width={1550} />
+          <img
+            src={paris}
+            className="d-block w-100"
+            alt="Paris"
+            style={{ height: "550px", objectFit: "cover" }}
+          />
           <Carousel.Caption>
             <h3>Paris</h3>
             <p>
@@ -51,12 +71,17 @@ const Cards = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={nice} height={550} width={1550} />
+          <img
+            src={nice}
+            className="d-block w-100"
+            alt="Nice"
+            style={{ height: "550px", objectFit: "cover" }}
+          />
           <Carousel.Caption>
             <h3>Nice</h3>
             <p>
               Located on the French Riviera, Nice offers beautiful beaches, a
-              charming old town, and the famous Promenade
+              charming old town, and the famous Promenade.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
