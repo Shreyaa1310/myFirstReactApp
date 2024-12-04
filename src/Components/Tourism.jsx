@@ -9,7 +9,7 @@ const Tourism = () => {
       <div className="heading text-center">
         <h4>Best Places to Explore in France</h4>
       </div>
-      <div className="container outer-container py-4">
+      <div className="container py-4">
         {placesData.map((place) => (
           <div
             key={place.id}
@@ -24,7 +24,7 @@ const Tourism = () => {
               />
             </div>
             <div className="col-md-8">
-              <h5 className="text-primary">{place.name}</h5>
+              <h5>{place.name}</h5>
               <p>{place.description}</p>
             </div>
           </div>

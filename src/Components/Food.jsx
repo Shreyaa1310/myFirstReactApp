@@ -3,14 +3,14 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./Food.css";
 import foodData from "../foodData";
-import Footer from "./Footer"
+import Footer from "./Footer";
 const Food = () => {
   return (
     <div>
       <div className="container">
         {/* Header Section */}
-        <div className="text-center mb-4">
-          <h2 className="text-primary">Best Food to Try in France</h2>
+        <div className="text-center mb-4 pt-3 pb-3">
+          <h2>Best Food to Try in France</h2>
           <p className="text-muted">
             Discover the most iconic and delicious French dishes!
           </p>
